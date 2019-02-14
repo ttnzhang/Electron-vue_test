@@ -70,7 +70,7 @@
                     <h2 slot="title">{{updateInfo.releaseName}}</h2>
                     <p slot="extra">{{currentVersion}} → {{updateInfo.version}}</p>
                     <div v-html="updateInfo.releaseNotes"></div>
-                    <p>更新时间：{{updateInfo.releaseDate | dateFilter}}</p>
+                    <!-- <p>更新时间：{{updateInfo.releaseDate | dateFilter}}</p> -->
                 </Card>
             </div>
             <div slot="footer">

@@ -66,12 +66,21 @@ import Header from '../components/LandingPage/Header.vue';
           }
         }
       },
+      IsConnection(){
+          if (navigator.onLine) 
+          {
+              alert('联网')//正常工作
+          } else{
+            alert('断网')
+          }
+
+      }
 
     },
     mounted() {
       this.keyupSubmit();
       localStorage.setItem('corpId', '123123123');
-      
+      this.IsConnection();
     },
 
   }
